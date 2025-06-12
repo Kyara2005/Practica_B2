@@ -43,7 +43,7 @@ public class Main {
         System.out.print("Tipo de asiento (ventana/pasillo/adelante/final): ");
         String asiento = sc.nextLine();
 
-        System.out.print("¿Cuántas maletas llevará?: ");
+        System.out.print("¿Cuántas maletas llevará?(Más de dos tiene costoadicional): ");
         int maletas = sc.nextInt();
         sc.nextLine(); // limpiar buffer
 
