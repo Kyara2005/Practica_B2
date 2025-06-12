@@ -8,7 +8,19 @@ public class Normal extends ServiciosBase {
 
     @Override
     public double calcularRecargo() {
-        return 1.0; // sin recargo
+        return 1.0;
+    }
+
+    @Override
+    public int maletasIncluidas() {
+        return 1;
+    }
+
+    @Override
+    public String getTipoServicio() {
+        return "Normal";
     }
 }
+
+
 

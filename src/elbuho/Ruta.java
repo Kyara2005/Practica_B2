@@ -11,20 +11,13 @@ public class Ruta {
         this.precioBase = precioBase;
     }
 
-    public String getOrigen() {
-        return origen;
-    }
-
-    public String getDestino() {
-        return destino;
+    public String getDescripcion() {
+        return origen + " - " + destino;
     }
 
     public double getPrecioBase() {
         return precioBase;
     }
-
-    public String getDescripcion() {
-        return origen + " - " + destino;
-    }
 }
+
 

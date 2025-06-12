@@ -12,11 +12,24 @@ public class VIP extends Normal {
 
     @Override
     public double calcularRecargo() {
-        return 1.3; // 30% más caro
+        return 1.3;
+    }
+
+    @Override
+    public int maletasIncluidas() {
+        return 2;
+    }
+
+    @Override
+    public String getTipoServicio() {
+        return "VIP";
     }
 
     public List<String> getServiciosAdicionales() {
         return serviciosAdicionales;
     }
 }
+
+
+
 

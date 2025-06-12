@@ -9,7 +9,14 @@ public abstract class ServiciosBase {
         this.maletas = maletas;
     }
 
-    public abstract double calcularRecargo(); // 1.0 si es normal, 1.3 si es VIP
+    public abstract double calcularRecargo();
+    public abstract int maletasIncluidas();
+    public abstract String getTipoServicio();
+
+    public double MaletasExtra() {
+        int extra = maletas - maletasIncluidas();
+        return (extra > 0) ? extra * 5.0 : 0;
+    }
 
     public String getAsiento() {
         return asiento;
@@ -19,4 +26,7 @@ public abstract class ServiciosBase {
         return maletas;
     }
 }
+
+
+
 
